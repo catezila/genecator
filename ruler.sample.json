@@ -1,0 +1,44 @@
+{
+  "rules": [
+    {
+      "if": {
+        "trait_type": "Body",
+        "value": ["Robot"]
+      },
+      "then": {
+        "trait_type": "Mouth",
+        "excluded_values": ["Cigar", "Bubblegum"]
+      }
+    },
+    {
+      "if": {
+        "trait_type": "Mouth",
+        "value": ["VR Headset", "Cyborg"]
+      },
+      "then": {
+        "trait_type": "Head",
+        "excluded_values": ["Helmet", "Crown"]
+      }
+    },
+    {
+      "if": {
+        "trait_type": "Head",
+        "value": ["Helmet"]
+      },
+      "then": {
+        "trait_type": "Eyes",
+        "excluded_values": ["VR Headset"]
+      }
+    },
+    {
+      "if": {
+        "trait_type": "Eyes",
+        "value": ["VR Headset", "3D Glasses"]
+      },
+      "then": {
+        "trait_type": "Head",
+        "excluded_values": ["Helmet", "Crown"]
+      }
+    }
+  ]
+}

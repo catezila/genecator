@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NFT Generator Configuration Schema",
+  "description": "Schema for the config.json file, defining NFT traits and generation parameters.",
+  "type": "object",
+  "required": [
+    "trait_order",
+    "traits",
+    "image_size"
+  ],
+  "properties": {
+    "trait_order": {
+      "type": "array",
+      "description": "The order in which traits are layered to form an NFT image.",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "priority_traits": {
+      "type": "array",
+      "description": "List of trait types that should be prioritized for uniqueness. If not specified, first 3 traits in trait_order will be used.",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "image_size": {
+      "type": "array",
+      "description": "Custom image dimensions [width, height]. If not specified, detected from first trait image.",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "traits": {
+      "type": "object",
+      "description": "Definitions for each trait type, including rarity and available options.",
+      "patternProperties": {
+        "^[a-zA-Z0-9_]+$": {
+          "type": "object",
+          "required": [
+            "options"
+          ],
+          "properties": {
+"rarity": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 5,
+        "description": "The overall rarity weight of this trait type appearing in an NFT (1 = rarest, 5 = most common). If not specified, trait is always included."
+      },
+            "options": {
+              "type": "array",
+              "description": "A list of individual trait options for this trait type, each with a name and rarity.",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name",
+                  "rarity"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "The name of the trait option (e.g., 'Black', '3D Glasses')."
+                  },
+"rarity": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 5,
+              "description": "The rarity weight of this specific option within its trait type (1 = rarest, 5 = most common)."
+            }
+                }
+              },
+              "minItems": 1
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "max_similar_combinations": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Maximum number of times a specific 4-trait pattern or BSH combination can appear. Default is 1 for strict uniqueness."
+    },
+    "ipfs_cid": {
+      "type": "string",
+      "description": "IPFS CID for image hosting. Used in metadata generation."
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Metadata configuration for the NFT collection.",
+      "properties": {
+        "name_template": {
+          "type": "string",
+          "description": "Template for NFT names. Use {id} for the NFT ID. Default: 'PacaPunk #{id}'"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description for the NFT collection. Default: 'Unique 32-Pixel PacaPunk NFT from the PacaPunk collection'"
+        },
+        "external_url": {
+          "type": "string",
+          "description": "External URL for the NFT collection. Default: 'https://PacaPunk.example.com'"
+        },
+        "collection_name": {
+          "type": "string",
+          "description": "Name of the NFT collection. Default: 'PacaPunk'"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

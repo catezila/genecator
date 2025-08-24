@@ -1,0 +1,75 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.crush/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Log files
+*.log
+
+# Output directories
+output/
+
+# Traits directories
+traits/*
+
+# tests
+tests/
+
+# Temporary files
+*.tmp
+*.temp
+
+# IPFS cache
+.ipfs_cache/
+
+# Configuration files (keep samples, ignore actual configs)
+config.json
+ruler.json
+!config.sample.json
+!ruler.sample.json
+
+# Reports and analysis
+duplicate_check_report.json
+similarity_report.json
+rarity_report.json
+
+# Coverage and profiling
+.coverage
+.prof
+
+# AI Assistants
+AGENTS.md
+QWEN.md
+CLAUDE.md
+
+# OS-specific files
+Thumbs.db
+
+# Package manager files
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Environment variables
+.env
+.env.local
+.env.*.local

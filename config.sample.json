@@ -1,0 +1,406 @@
+{
+  "trait_order": [
+    "Base",
+    "Eyes",
+    "Head",
+    "Mouth",
+    "Outfit"
+  ],
+  "priority_traits": [
+    "Base",
+    "Head",
+    "Outfit"
+  ],
+  "image_size": [
+    320,
+    320
+  ],
+  "traits": {
+    "Base": {
+      "options": [
+        {
+          "name": "Black",
+          "rarity": 5
+        },
+        {
+          "name": "Orange",
+          "rarity": 1
+        },
+        {
+          "name": "Silver",
+          "rarity": 2
+        },
+        {
+          "name": "Tortoi",
+          "rarity": 4
+        },
+        {
+          "name": "White",
+          "rarity": 3
+        }
+      ]
+    },
+    "Eyes": {
+      "options": [
+        {
+          "name": "3D",
+          "rarity": 5
+        },
+        {
+          "name": "Angry",
+          "rarity": 2
+        },
+        {
+          "name": "Big-Eyes",
+          "rarity": 2
+        },
+        {
+          "name": "Black-Glasses",
+          "rarity": 3
+        },
+        {
+          "name": "Blue-Glasses",
+          "rarity": 3
+        },
+        {
+          "name": "Green-Glasses",
+          "rarity": 3
+        },
+        {
+          "name": "Jaded",
+          "rarity": 3
+        },
+        {
+          "name": "Laser-Eyes",
+          "rarity": 5
+        },
+        {
+          "name": "Normal",
+          "rarity": 1
+        },
+        {
+          "name": "Orange-Glasses",
+          "rarity": 3
+        },
+        {
+          "name": "Rounded-Glasses",
+          "rarity": 3
+        },
+        {
+          "name": "Shield-Glasses",
+          "rarity": 5
+        },
+        {
+          "name": "Visor",
+          "rarity": 5
+        },
+        {
+          "name": "White-Glasses",
+          "rarity": 3
+        },
+        {
+          "name": "Wink",
+          "rarity": 3
+        }
+      ]
+    },
+    "Head": {
+      "options": [
+        {
+          "name": "Bandana-Blue",
+          "rarity": 3
+        },
+        {
+          "name": "Bandana-Red",
+          "rarity": 3
+        },
+        {
+          "name": "Beanie Grey",
+          "rarity": 1
+        },
+        {
+          "name": "Beret Green",
+          "rarity": 3
+        },
+        {
+          "name": "Bishop",
+          "rarity": 5
+        },
+        {
+          "name": "Bucket Hat Grey",
+          "rarity": 2
+        },
+        {
+          "name": "Cap Blue",
+          "rarity": 2
+        },
+        {
+          "name": "Cone",
+          "rarity": 5
+        },
+        {
+          "name": "Cowboy",
+          "rarity": 3
+        },
+        {
+          "name": "Crown",
+          "rarity": 5
+        },
+        {
+          "name": "Fedora Blue",
+          "rarity": 2
+        },
+        {
+          "name": "Flat Cap",
+          "rarity": 2
+        },
+        {
+          "name": "Furr-Hat",
+          "rarity": 4
+        },
+        {
+          "name": "Horn",
+          "rarity": 5
+        },
+        {
+          "name": "Mining",
+          "rarity": 3
+        },
+        {
+          "name": "None",
+          "rarity": 3
+        },
+        {
+          "name": "Pigsy Hat",
+          "rarity": 5
+        },
+        {
+          "name": "Pirate Bandana",
+          "rarity": 2
+        },
+        {
+          "name": "Pirate Hat",
+          "rarity": 3
+        },
+        {
+          "name": "Police Hat",
+          "rarity": 3
+        },
+        {
+          "name": "Rasta",
+          "rarity": 5
+        },
+        {
+          "name": "Reindeer",
+          "rarity": 4
+        },
+        {
+          "name": "Safari-Hat",
+          "rarity": 3
+        },
+        {
+          "name": "Santa",
+          "rarity": 3
+        },
+        {
+          "name": "Sheriff",
+          "rarity": 3
+        },
+        {
+          "name": "Snapback",
+          "rarity": 2
+        },
+        {
+          "name": "Sombrero",
+          "rarity": 3
+        },
+        {
+          "name": "Top-Hat",
+          "rarity": 2
+        },
+        {
+          "name": "Viking",
+          "rarity": 3
+        },
+        {
+          "name": "Winter-Soldier",
+          "rarity": 3
+        },
+        {
+          "name": "Wizard",
+          "rarity": 3
+        }
+      ]
+    },
+    "Mouth": {
+      "options": [
+        {
+          "name": "Closed",
+          "rarity": 3
+        },
+        {
+          "name": "Flat",
+          "rarity": 1
+        },
+        {
+          "name": "Grin",
+          "rarity": 4
+        },
+        {
+          "name": "Laugh",
+          "rarity": 3
+        },
+        {
+          "name": "Smile",
+          "rarity": 2
+        },
+        {
+          "name": "Smirk",
+          "rarity": 3
+        }
+      ]
+    },
+    "Outfit": {
+      "options": [
+        {
+          "name": "Army-Jacket",
+          "rarity": 5
+        },
+        {
+          "name": "Blacksuit",
+          "rarity": 4
+        },
+        {
+          "name": "Bull-Shirt",
+          "rarity": 2
+        },
+        {
+          "name": "Bunny-Blue",
+          "rarity": 2
+        },
+        {
+          "name": "DB-Gi",
+          "rarity": 5
+        },
+        {
+          "name": "Heart-Shirt-Black",
+          "rarity": 2
+        },
+        {
+          "name": "Heart-Shirt-White",
+          "rarity": 2
+        },
+        {
+          "name": "Hoodie-Blue",
+          "rarity": 2
+        },
+        {
+          "name": "Hoodie-Green",
+          "rarity": 2
+        },
+        {
+          "name": "Hoodie-Grey",
+          "rarity": 2
+        },
+        {
+          "name": "Hoodie-Purple",
+          "rarity": 2
+        },
+        {
+          "name": "Kings-Robe",
+          "rarity": 5
+        },
+        {
+          "name": "Leather-Jacket",
+          "rarity": 3
+        },
+        {
+          "name": "Mario",
+          "rarity": 5
+        },
+        {
+          "name": "None",
+          "rarity": 3
+        },
+        {
+          "name": "Plaid-Blue",
+          "rarity": 2
+        },
+        {
+          "name": "Plaid-Green",
+          "rarity": 2
+        },
+        {
+          "name": "Plaid-Red",
+          "rarity": 2
+        },
+        {
+          "name": "Puffer-Jacket-Brown",
+          "rarity": 3
+        },
+        {
+          "name": "Puffer-Jacket-Green",
+          "rarity": 3
+        },
+        {
+          "name": "Puffer-Jacket-Navy",
+          "rarity": 3
+        },
+        {
+          "name": "RGB-Shirt",
+          "rarity": 4
+        },
+        {
+          "name": "Referre",
+          "rarity": 3
+        },
+        {
+          "name": "Shirt-Blue",
+          "rarity": 2
+        },
+        {
+          "name": "Shirt-Green",
+          "rarity": 2
+        },
+        {
+          "name": "Shirt-Pink",
+          "rarity": 2
+        },
+        {
+          "name": "Shirt-Yellow",
+          "rarity": 2
+        },
+        {
+          "name": "Tanktop-Black",
+          "rarity": 3
+        },
+        {
+          "name": "Tanktop-White",
+          "rarity": 3
+        },
+        {
+          "name": "Target",
+          "rarity": 3
+        },
+        {
+          "name": "Turtleneck-Brown",
+          "rarity": 3
+        },
+        {
+          "name": "Turtleneck-Green",
+          "rarity": 3
+        },
+        {
+          "name": "Turtleneck-Purple",
+          "rarity": 3
+        },
+        {
+          "name": "Winter-Jacket",
+          "rarity": 4
+        }
+      ]
+    }
+  },
+  "max_similar_combinations": 1,
+  "ipfs_cid": "your-ipfs-cid-here"
+}

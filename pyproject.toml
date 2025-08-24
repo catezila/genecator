@@ -1,0 +1,37 @@
+[project]
+name = "genecator"
+version = "0.4.0"
+description = "A sophisticated Python-based NFT generator for creating unique pixel art NFTs with layered trait composition, rarity-based selection, and comprehensive validation."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "Pillow>=10.0.0",
+    "tqdm>=4.66.0",
+    "jsonschema>=4.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --cov=modules --cov-report=term-missing"
