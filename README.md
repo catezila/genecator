@@ -62,7 +62,7 @@ A **production-ready** Python-based NFT generator with advanced performance opti
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+    git clone https://github.com/catezila/genecator.git
    cd genecator
    ```
 
